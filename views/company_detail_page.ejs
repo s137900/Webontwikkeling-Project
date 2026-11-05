@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/shared_standard.css">
+    <link rel="stylesheet" href="../css/company_detail_page.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/logout_site.js" defer ></script>
+</head>
+<body>
+    <%- include("partials/sidebar") %>
+    <main>
+
+        <div class="company_details">
+            <img src="../assets/<%= company.logo_url %>" alt="">
+    
+            <div class="detail_container">
+                <p>Founding Year: </p>
+                <p><%= company.founding_year %></p>
+            </div>
+            <div class="detail_container">
+                <p>Name: </p>
+                <p><%= company.name %></p>
+            </div>
+            <div class="detail_container">
+                <p>Country: </p>
+                <p>cars</p>
+            </div>
+        </div>
+        <% for(let car of cars) { %>
+        <a href="/car_detail_page/<%= car.id %>" class="car_card">
+            <%= car.name %>
+        </a>
+        <% } %>
+    </main>
+    
+</body>
+</html>

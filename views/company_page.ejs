@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/shared_standard.css">
+    <link rel="stylesheet" href="../css/shared_columns.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/logout_site.js" defer ></script>
+    <script src="../js/sort_company_page.js" defer></script>
+</head>
+<body>
+    <style>
+        [name="<%= asc_desc %>"], [name="<%= Company_sort_field %>"]{
+            text-decoration: underline !important;
+        }
+    </style>
+    <%- include("partials/sidebar") %>
+
+    <main>
+        <input spellcheck="false" autocomplete="off" id="search_text" 
+        class="search" type="text" placeholder="<%= search_term %>">
+
+        <div class="car_attributes column">
+            <div class="asc_desc">
+                <button  name="true"  onclick="set_asc_desc(true)" >Asc</button>
+                <p>/</p>
+                <button  name="false" onclick="set_asc_desc(false)" >Desc</button>
+            </div>
+            <button  name="name"          onclick="set_sort_attr('name')"  class="column_name">Company Name</button>
+            <hr>
+            <button  name="founding_year" onclick="set_sort_attr('founding_year')" class="column_name">Founding Year</button>
+            <hr>
+            <button  name="country"       onclick="set_sort_attr('country')" class="column_name">Country</button>
+        </div>
+
+        <% for(let company of companys) { %>
+            <a href="/company_detail_page/<%= company.id %>" class="car_column column">
+                <p class="column_name"><%= company.name %></p>
+                <hr>
+                <p class="column_name"><%= company.founding_year %></p>
+                <hr>
+                <p class="column_name"><%= company.country %></p>
+            </a>
+        <% } %>
+    </main>
+</body>
+</html>

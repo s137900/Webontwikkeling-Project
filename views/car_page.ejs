@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/shared_standard.css">
+    <link rel="stylesheet" href="../css/shared_columns.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/logout_site.js" defer ></script>
+    <script src="../js/sort_car_page.js" defer ></script>
+</head>
+<body>
+    <style>
+        [name="<%= asc_desc %>"], [name="<%= car_sort_field %>"]{
+            text-decoration: underline !important;
+        }
+    </style>
+    <%- include("partials/sidebar") %>
+
+    <main>
+        
+        <input autocomplete="off" spellcheck="false" autocomplete id="search_text"
+         class="search" type="text" placeholder="<%= search_term %>">
+
+        <div class="car_attributes column">
+            <div class="asc_desc">
+                <button name="true" onclick="set_asc_desc(true)" id="asc">Asc</button>
+                <p>/</p>
+                <button name="false" onclick="set_asc_desc(false)">Desc</button>
+            </div>
+            <button name="name" onclick="set_sort_attr('name')" class="column_name">Car Name</button>
+            <hr>
+            <button name="price" onclick="set_sort_attr('price')" class="column_name">Price</button>
+            <hr>
+            <button name="car_type" onclick="set_sort_attr('car_type')" class="column_name">Car Type</button>
+            <hr>
+            <button name="is_electric" onclick="set_sort_attr('is_electric')" class="column_name">Is Electric</button>
+            <hr>
+            <button name="release_date" onclick="set_sort_attr('release_date')" class="column_name">Release Date</button>
+        </div>
+
+        <% for(let car_info of cars_info) { %>
+        <a href="/car_detail_page/<%= car_info.car.id %>" class="car_column column">
+            <p class="column_name"><%= car_info.car.name %></p>
+            <hr>
+            <p class="column_name"><%= car_info.car.price %></p>
+            <hr>
+            <p class="column_name"><%= car_info.car.car_type %></p>
+            <hr>
+            <p class="column_name"><%= car_info.if_electric %></p>
+            <hr>
+            <p class="column_name"><%= car_info.car.release_date %></p>
+        </a>
+        <% } %>
+    </main>
+</body>
+</html>

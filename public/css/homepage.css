@@ -1,0 +1,14 @@
+
+
+
+main{
+    display: grid;
+    place-content: center;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 10rem;
+}

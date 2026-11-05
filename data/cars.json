@@ -1,0 +1,174 @@
+[
+    {
+        "id": 10,
+        "name": "BMW IX",
+        "description": "De BMW iX neemt vol vertrouwen het voortouw. Met een elektrische actieradius tot 701 km geniet u ook op langere afstanden van onbezorgd rijplezier. Het nieuwe exterieur spreekt een heldere en moderne designtaal.",
+        "price": 87040,
+        "is_electric": true,
+        "release_date": "2019-07-14",
+        "img_url": "bmw_ix.webp",
+        "car_type": "Suv",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "blauw"
+        ],
+        "company_id": 2
+    },
+    {
+        "id": 9,
+        "name": "Volkswagen ID.7 Tourer",
+        "description": "De ID.7 Tourer overtuigt door zijn design gecombineerd met een ruime koffer. Met zijn riante laadcapaciteit en de optionele Easy Open/Close-functie zet deze volledig elektrische ID. nieuwe maatstaven op het gebied van comfort en functionaliteit.",
+        "price": 52912,
+        "is_electric": true,
+        "release_date": "2020-11-03",
+        "img_url": "Volkswagen_ID.7_Tourer.jpg",
+        "car_type": "Station wagon",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "rood",
+            "blauw"
+        ],
+        "company_id": 1
+    },
+    {
+        "id": 1,
+        "name": "BYD Dolphin Surf",
+        "description": "De BYD Dolphin Surf is een compacte elektrische auto die perfect past bij het stadsleven. Hij biedt een modern design, verrassend veel binnenruimte en een soepele, krachtige rijervaring. Dankzij slimme technologie in het interieur is de auto comfortabel en makkelijk in gebruik. Een ideale keuze voor wie praktisch wil rijden zonder in te leveren op gemak of plezier.",
+        "price": 21290,
+        "is_electric": true,
+        "release_date": "2021-02-19",
+        "img_url": "BYD_Dolphin_Surf.webp",
+        "car_type": "Hatchback",
+        "colors": [
+            "groen",
+            "zwart",
+            "beige",
+            "blauw"
+        ],
+        "company_id": 0
+    },
+    {
+        "id": 2,
+        "name": "BYD Dolphin",
+        "description": "De stadswagen met de perfecte combinatie van innovatie, efficintie en comfort. Met een indrukwekkend WLTP stadsrijbereik tot 565 km, biedt deze volledig elektrische hatchback ongeebvenaarde prestaties 2013 standaard met een uitgebreide uitrusting, zonder compromissen!",
+        "price": 35490,
+        "is_electric": true,
+        "release_date": "2021-09-27",
+        "img_url": "byd_dolphin_surf.webp",
+        "car_type": "Hatchback",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart"
+        ],
+        "company_id": 0
+    },
+    {
+        "id": 3,
+        "name": "BYD Atto 2",
+        "description": "BYD ATTO 2 is een compacte elektrische SUV, ontworpen voor stedelijke omgevingen en jonge professionals. Het model integreert BYD2019s geavanceerde technologie met een veilige en efficite ebnte rijervaring in een praktisch en doordacht ontwerp. Navigeer moeiteloos door de stad met een indrukwekkend WLTP-stadsbereik van 604 km.",
+        "price": 34990,
+        "is_electric": true,
+        "release_date": "2022-04-11",
+        "img_url": "BYD_Atto_2.jpg",
+        "car_type": "Crossover Suv",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "groen"
+        ],
+        "company_id": 0
+    },
+    {
+        "id": 4,
+        "name": "BYD Atto 2 DM-i",
+        "description": "Dankzij de Super Hybrid-technologie, exclusief ontwikkeld door BYD, biedt de ATTO 2 DM-i een 100% elektrische rijervaring, terwijl u tegelijk profiteert van het uitgebreide rijbereik van een hybride voertuig. Deze stedelijke Super Hybrid SUV onderscheidt zich door zijn opmerkelijke energie-efficientie, met een gewogen gecombineerd verbruik vanaf 1,8 L/100 km. Elektrisch wanneer het kan. Hybride wanneer u dat wilt.",
+        "price": 24990,
+        "is_electric": false,
+        "release_date": "2022-12-05",
+        "img_url": "BYD_Atto_2_DM-i.jpg",
+        "car_type": "Crossover Suv",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "blauw"
+        ],
+        "company_id": 0
+    },
+    {
+        "id": 5,
+        "name": "BYD Atto 3",
+        "description": "BYD Atto 3 is een krachtige, volledig elektrische SUV die design en functionaliteit moeiteloos combineert. Met zijn futuristische uitstraling, ruime interieur en geavanceerde technologien biedt het ultiem rijcomfort en een indrukwekkend rijbereik, perfect voor zowel stadsritten als lange avonturen.",
+        "price": 38990,
+        "is_electric": true,
+        "release_date": "2023-06-22",
+        "img_url": "BYD_Atto_3.jpg",
+        "car_type": "Crossover Suv",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "blauw"
+        ],
+        "company_id": 0
+    },
+    {
+        "id": 6,
+        "name": "BYD Seal 6 DM-i",
+        "description": "De BYD Seal 6 DM-i maakt gebruik van BYD 2019s Dual Mode (DM) technologie voor maximale energie-efficientie en rijcomfort. Dit slimme systeem combineert elektrische kracht met een zuinige verbrandingsmotor en past zich automatisch aan voor de beste rijervaring.",
+        "price": 36990,
+        "is_electric": false,
+        "release_date": "2023-10-08",
+        "img_url": "BYD_Seal_6_DM-i.jpg",
+        "car_type": "Station wagon",
+        "colors": [
+            "wit",
+            "zwart",
+            "blauw",
+            "beige"
+        ],
+        "company_id": 0
+    },
+    {
+        "id": 7,
+        "name": "Volkswagen ID.3",
+        "description": "Met de ID.3 blijft elektrische mobiliteit aan kracht winnen bij Volkswagen: aan de buitenkant geven de strakke lijnen de ID.3 een volwassener gezicht, terwijl het interieur standaard is voorzien van hoogwaardige materialen en talloze rijhulpsystemen. Kortom: zuiver elektrische mobiliteit op het scherpst van de snede.",
+        "price": 34050,
+        "is_electric": true,
+        "release_date": "2024-01-17",
+        "img_url": "Volkswagen_ID.3.avif",
+        "car_type": "Hatchback",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "beige",
+            "blauw"
+        ],
+        "company_id": 1
+    },
+    {
+        "id": 8,
+        "name": "Volkswagen Tayron",
+        "description": "Als doordachte allrounder met charismatisch design vervolledigt de Tayron het SUV-aanbod van Volkswagen met een uitgebreide keuze aan motoren. Met zijn bijzonder ruime interieur en tot wel 7 zitplaatsen is hij de perfecte reisgenoot in alle levenssituaties. Niet alleen in het leven van elke dag maar ook bij speciale momenten biedt hij flexibiliteit.",
+        "price": 46963,
+        "is_electric": true,
+        "release_date": "2024-08-30",
+        "img_url": "Volkswagen_Tayron.webp",
+        "car_type": "Suv",
+        "colors": [
+            "wit",
+            "grijs",
+            "zwart",
+            "paarse",
+            "blauw"
+        ],
+        "company_id": 1
+    }
+]

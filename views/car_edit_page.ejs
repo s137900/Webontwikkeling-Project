@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/shared_standard.css">
+    <link rel="stylesheet" href="../css/car_edit_page.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/logout_site.js" defer ></script>
+    <script src="../js/edit_page.js" defer></script>
+</head>
+<body>
+    <%- include("partials/sidebar") %>
+
+    <main>
+        <article>
+            <div class="option_container">
+                <p>Name:</p>
+                <input autocomplete="off" id="name" placeholder="<%= car.name %>" type="text">
+            </div>
+            <div class="option_container">
+                <p>Price:</p>
+                <input autocomplete="off" id="price" placeholder="<%= car.price %>" type="number">
+            </div>
+            <div class="option_container">
+                <p>Car Type:</p>
+                <select class="select_menu" name="" id="car_type">
+                    <option <% if ('Station wagon'=== car.car_type ){ %> selected <% } %> >Station wagon</option>
+                    <option <% if ('suv'          === car.car_type ){ %> selected <% } %> >Suv</option>
+                    <option <% if ('hatchback'    === car.car_type ){ %> selected <% } %> >Hatchback</option>
+                    <option <% if ('crossover suv'=== car.car_type ){ %> selected <% } %> >Crossover Suv</option>
+                </select>
+            </div>
+
+            <div class="option_container">
+                <p>Description:</p>
+                <textarea name="" id="description" spellcheck="false"><%= car.description %></textarea>
+            </div>
+
+            <button onclick="submit_updated_car_attr()">Submit</button>
+        </article>
+    </main>
+</body>
+</html>

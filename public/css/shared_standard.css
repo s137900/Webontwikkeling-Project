@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    border: none;
+    background: none;
+
+
+    font-family:  "Inter", sans-serif !important;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    
+    height: 100%;
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+body{
+    display: grid;
+    position: relative;
+    grid-template-columns: 200px auto;
+
+}
+
+a { color: inherit; } 
+
+.sidebar{
+    position: relative;
+    background-image: linear-gradient(white, #E0E0E0);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+}
+
+.sidebar a{
+    text-align: center;
+    font-weight: 150;
+    font-size: 1.5rem;
+    font-style: italic;
+
+    padding: 5px 0px ;
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(0, 0, 0, 0);
+
+    transition: text-decoration 200ms ease-in-out ;
+}
+
+.sidebar a:hover{
+    text-decoration-color: rgba(0, 0, 0, 0.453);
+    cursor: pointer;
+}
+
+.sidebar hr{
+    margin: 15px 0px;
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.204);
+}
+
+.sidebar button{
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-style: italic;
+    bottom: 0.5rem;
+    right: 1rem;
+
+    transition: text-decoration 200ms ;
+    text-decoration: underline;
+    text-decoration-thickness:1px ;
+    text-underline-offset: 2px;
+    text-decoration-color: transparent;
+}
+.sidebar button:hover{
+    text-decoration-color: rgba(0, 0, 0, 0.724);
+    transition: text-decoration 200ms;
+    cursor: pointer;
+    
+}

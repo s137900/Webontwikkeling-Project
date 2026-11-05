@@ -1,0 +1,164 @@
+
+main{
+
+    padding: 30px min(2vw, 50px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+main .search{
+    padding: 10px 20px;
+    width: 300px;
+
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    border-image: linear-gradient(to right, rgb(223, 223, 223) , rgba(0, 0, 0, 0.374)) 1;
+    border-width: 1px;
+    border-style: solid;
+
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    opacity: 1;
+}
+
+main .search::placeholder{
+    font-style: italic;
+    font-size: 1rem;
+    transition: opacity 2s ease-out;
+}
+
+
+main .search:focus::placeholder{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+main .search:focus{
+    outline: none;
+}
+
+main .car_attributes{
+    position: relative;
+}
+
+main .asc_desc{
+    position: absolute;
+    display: flex;
+    gap: 6px;
+    font-weight: 300;
+    
+    left: 0.5rem;
+    top: -1.8rem;
+    font-size: 0.9rem;
+}
+
+main .asc_desc button, main .asc_desc p{
+    color: rgba(0, 0, 0, 0.599);
+}
+main .asc_desc p{
+    cursor: default;
+}
+
+main .column{
+    background-image: linear-gradient(white,#EAEAEA 77%, #D5D5D5);
+    box-shadow: 0 0 14px #00000025;
+
+    padding: 10px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 10px;
+    text-align: center;
+
+
+    color: #3c3c3c;
+
+}
+
+main .car_column{
+    cursor: pointer;
+    box-shadow: 0 0 7px #00000068;
+    background-image: linear-gradient(90deg ,white, #E3E3E3 );
+}
+
+
+main .car_attributes .column_name{
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+main .car_column{
+    text-decoration: none;
+}
+
+main .car_column .column_name{
+    border: none;
+    background-color: transparent;
+    font-size: 0.8rem;
+
+    text-decoration-color: transparent;
+}
+
+
+main .car_attributes button{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration 500ms;
+}
+
+main .car_attributes button:hover{
+    text-decoration-color: gray;
+}
+
+
+main .column .column_name:nth-of-type(1){
+    width: 200px;
+}
+main .column .column_name:nth-of-type(2){
+    width: 100px;
+}
+
+main .column .column_name:nth-of-type(3){
+    width: 100px;
+}
+
+main .column .column_name:nth-of-type(4){
+    width: 80px;
+}
+main .column .column_name:nth-of-type(5){
+    width: 110px;
+}
+
+main .car_attributes .column_name{
+    color: #00000091;
+    font-weight: 300;
+}
+
+main .car_column .column_name{
+    color: #0000008b;
+}
+
+
+
+main  hr{
+    width: 1px;
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0.285);
+    height: 100%;
+}
+

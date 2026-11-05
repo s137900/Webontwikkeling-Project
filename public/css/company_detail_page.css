@@ -1,0 +1,68 @@
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+
+    padding-bottom: 50px;
+}
+
+.company_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( #EDEDED, #FFFFFF);
+
+    margin-top: 200px;
+    padding: 20px 50px;
+    box-shadow: 0 0 4px #00000046;
+
+    font-style: italic;
+    color: gray;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.company_details img{
+    display: block;
+    max-width:250px;
+    width: auto;
+    height: auto;
+}
+
+.company_details .detail_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.car_card{
+    cursor: pointer;
+    width: 350px;
+    font-size: 1.5rem;
+    font-weight: 200;
+
+    text-align: center;
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    padding: 20px 40px;
+    border: none;
+
+    color: rgba(0, 0, 0, 0.599);
+    text-decoration-color: rgba(0, 0, 0, 0.365);
+    background-image: linear-gradient(90deg ,white, #E3E3E3 );;
+    box-shadow: 0 0 8px #00000046;
+}

@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": 0,
+    "name": "BYD",
+    "country": "china",
+    "logo_url": "byd.webp",
+    "founding_year":1995
+  },
+  {
+    "id": 1,
+    "name": "Volkswagen",
+    "country": "germany",
+    "logo_url": "vw_logo.png",
+    "founding_year":1937
+  },
+  {
+    "id": 2,
+    "name": "BMW",
+    "country": "germany",
+    "logo_url": "bmw_logo.png",
+    "founding_year":1916
+  }
+]

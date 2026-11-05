@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/shared_standard.css">
+    <link rel="stylesheet" href="../css/car_detail_page.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat_detail_page</title>
+    <script src="../js/logout_site.js" defer ></script>
+</head>
+<body>
+    
+    <%- include("partials/sidebar") %>
+
+    <main>
+        <article>
+            <div class="car_img_container">
+                <img class="car_img" src="../assets/<%= car.img_url %>" alt="">
+                <h1><%= car.name %></h1>
+            </div>
+            <div class="car_info1">
+                <p><%= price %>€</p>
+                <p>Is Elecktrisch: <%= is_electric %></p>
+                <p>Release date: <%= car.release_date %></p>
+            </div>
+            <div class="car_info2">
+                <p>Kleuren: <%= colors %></p>
+                <p>Type: <%= car.car_type %></p>
+            </div>
+            <div class="desc_and_brand">
+                <p>
+                    <%= car.description %>
+                </p>
+                <div class="merk">
+                    <img class="automerk_img" src="../assets/<%= car_company.logo_url %>" alt="">
+                    <a href="/company_detail_page/<%= car_company.id %>">Automerk: <%= car_company.name %></a>
+                </div>
+            </div>
+
+            
+            
+            <% if (is_admin === "Admin" ){ %> 
+                <div class="edit_container">
+                    <a href="/car_edit_page/<%= car.id %>" class="edit_button">Edit</a>
+                </div>
+            <% } %>
+        </article>
+    </main>
+</body>
+</html>
